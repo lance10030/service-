@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  background-color: lightskyblue;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+.req {
+  margin: 0;
+  padding: 0;
+  background-color: lightskyblue;
+}
+.req .item {
+  list-style-type: none;
+}
+.req .item button {
+  width: 200px;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}

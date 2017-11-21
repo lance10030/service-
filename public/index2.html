@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页路由</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <script src="https://cdn.bootcss.com/require.js/2.3.4/require.min.js"></script>
+</head>
+<body>
+  <div>
+      <label for="account">账号</label>
+      <input name="account" id="account" type="text" >
+  </div>
+   <div>
+       <label for="pwd">密码</label>
+       <input name="pwd" type="password" id="pwd">
+   </div>
+   <div>
+       <button id="login">登录</button>
+   </div>
+  <div>
+      <div>
+          <label for="name">标题:</label>
+          <input id="name" type="text">
+      </div>
+    <div>
+        <div>文章:</div>
+        <textarea id="text" rows="10" cols="40">
+      </textarea>
+    </div>
+  </div>
+  <ul class="req">
+      <li class="item"><button id="subArt">写入文章</button></li>
+      <li class="item"><button id="userAtc">查询用户文章</button></li>
+      <li class="item"><button id="btn3">修改某篇文章</button></li>
+      <li class="item"><button id="btn4">删除文章</button></li>
+      <li class="item"><button id="btn5">新增一条评论</button></li>
+      <li class="item"><button id="btn6">返回一篇文章的评论</button></li>
+      <li class="item"><button id="btn7">回复某条评论</button></li>
+      <li class="item"><button id="btn8">点赞或是反对</button></li>
+      <li class="item"><button id="btn9">跨域接口</button></li>
+
+  </ul>
+  <h2>图片信息相关的表单</h2>
+  <form action="/upload" target="tmp" id="myForm" method="post" enctype="multipart/form-data">
+      <!--注意此处的name和后端files的属性对应-->
+      <input type="file" name="logo">
+      <input type="submit">
+  </form>
+  <iframe id="tmp" name="tmp" style="display: none">这是为了提交表单之后不跳转</iframe>
+  <script src="javascripts/index.js"></script>
+</body>
+</html>
